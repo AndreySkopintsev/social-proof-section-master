@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
 *{
     box-sizing: border-box;
     padding: 0;
@@ -5,9 +7,13 @@
 }
 
 body{
-    padding: 40px 20px;
-    height: 1200px;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 400;
+    padding: 40px 5px;
+    height: 1400px;
+    font-size: 15px;
 }
+
 
 .container{
     display: flex;
@@ -15,7 +21,6 @@ body{
     justify-content: space-around;
     align-items: center;
     height: 100%;
-    border: 1px solid red;
 }
 
 .text, .ratings, .reviews{
@@ -24,7 +29,6 @@ body{
 }
 
 .text{
-    border: 1px solid green;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -32,12 +36,20 @@ body{
     align-items: center;
 }
 
+.text p{
+    color: hsl(303, 10%, 53%);
+}
+
+h1{
+    color: hsl(300, 43%, 22%);
+    font-weight: bold;
+}
+
 .text * {
     margin-bottom: 20px;
 }
 
 .ratings{
-    border: 1px solid purple;
     text-align: center;
 }
 
@@ -47,33 +59,53 @@ body{
 }
 
 .ratings * {
-    margin: 10px;
+    margin: 5px;
 }
 
 .rating{
-    border: 1px solid gray;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: hsl(300, 24%, 96%);
+    color: hsl(300, 43%, 22%);;
     border-radius: 10px;
-}
-
-.reviews{
-    border: 1px solid blue;
+    padding: 10px;
 }
 
 .review {
+    padding: 15px;
+    background: hsl(300, 43%, 22%);
+    color: hsl(0, 0%, 100%);
+    height: 240px;
+    width: 100%;
     margin-bottom: 20px;
-    border: 1px solid gold;
+    border-radius: 10px;
+}
+
+.review span{
+    color: hsla(333, 80%, 67%,0.5);
 }
 
 .user{
     display: flex;
-    border: 1px solid brown;
     width: 70%;
     justify-content: space-between;
     align-items: center;
+}
+
+.user p{
+    font-weight: 700;
 }
 
 .user img{
     border-radius: 50%;
     margin-left: 10px;
     height: 60px;
+}
+
+.user-review{
+    margin-top: 20px;
+    text-align: left;
 }
