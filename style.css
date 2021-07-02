@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    padding: 40px 20px;
+    height: 800px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    border: 1px solid red;
+}
+
+.text, .ratings, .reviews{
+    width: 100%;
+}
+
+.text{
+    border: 1px solid green;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.text * {
+    margin-bottom: 20px;
+}
+
+.ratings{
+    border: 1px solid purple;
+    text-align: center;
+}
+
+.stars{
+    display: flex;
+    justify-content: center;
+}
+
+.ratings * {
+    margin: 10px;
+}
