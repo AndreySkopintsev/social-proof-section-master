@@ -6,7 +6,7 @@
 
 body{
     padding: 40px 20px;
-    height: 800px;
+    height: 1200px;
 }
 
 .container{
@@ -20,6 +20,7 @@ body{
 
 .text, .ratings, .reviews{
     width: 100%;
+    padding: 10px 20px;
 }
 
 .text{
@@ -47,4 +48,32 @@ body{
 
 .ratings * {
     margin: 10px;
+}
+
+.rating{
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+.reviews{
+    border: 1px solid blue;
+}
+
+.review {
+    margin-bottom: 20px;
+    border: 1px solid gold;
+}
+
+.user{
+    display: flex;
+    border: 1px solid brown;
+    width: 70%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user img{
+    border-radius: 50%;
+    margin-left: 10px;
+    height: 60px;
 }
